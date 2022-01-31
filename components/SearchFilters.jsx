@@ -1,15 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  Flex,
-  Select,
-  Input,
-  Box,
-  Text,
-  Spinner,
-  Icon,
-  Button,
-  useQuery,
-} from "@chakra-ui/react";
+import { Flex, Select, Input, Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { MdCancel } from "react-icons/md";
 import Image from "next/image";
