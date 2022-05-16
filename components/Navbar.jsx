@@ -22,7 +22,7 @@ const Navbar = () => (
   >
     <Box fontSize="3xl" fontWeight="bold" color="blue.400">
       <Link href="/" paddingLeft="2">
-        Smart.Com Estate Ventures
+        Aboje Homes and Property INC.
       </Link>
     </Box>
     <Box>

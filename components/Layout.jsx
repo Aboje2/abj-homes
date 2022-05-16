@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => (
   <>
-    <Head>Real Estate</Head>
+    <Head>Aboje Homes</Head>
     <Box maxWidth="1280px" m="auto">
       <header>
         <Navbar />

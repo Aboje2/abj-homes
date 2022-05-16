@@ -33,7 +33,7 @@ const PropertyDetails = ({
             {isVerified && <GoVerified />}
           </Box>
           <Text fontWeight="bold" fontSize="lg">
-            AED {price} {rentFrequency && `/${rentFrequency}`}
+            ₦ {millify(price)} {rentFrequency && `/${rentFrequency}`}
           </Text>
         </Flex>
         <Box>
@@ -102,7 +102,7 @@ const PropertyDetails = ({
             Amenities
           </Text>
         )}
-        <Flex flexWrap="flex">
+        <Flex flexWrap="wrap">
           {amenities.map((item) =>
             item.amenities.map((amenity) => (
               <Text

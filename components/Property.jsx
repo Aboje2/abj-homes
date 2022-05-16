@@ -31,11 +31,11 @@ const Property = ({
       cursor="pointer"
     >
       <Box>
-        <Image
+        <img
           src={coverPhoto ? coverPhoto.url : DefaultImage}
-          alt="house"
           width={400}
           height={260}
+          alt="house"
         />
       </Box>
       <Box w="full">
@@ -45,7 +45,7 @@ const Property = ({
               {isVerified && <GoVerified />}
             </Box>
             <Text fontWeight="bold" fontSize="lg">
-              AED {price} {rentFrequency && `/${rentFrequency}`}
+              ₦ {millify(price)} {rentFrequency && `/${rentFrequency}`}
             </Text>
           </Flex>
           <Box>

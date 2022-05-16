@@ -1,12 +1,11 @@
-import { useState, useEffect } from "react";
-import { Flex, Select, Input, Box } from "@chakra-ui/react";
+import { useState } from "react";
+import { Flex, Select, Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { MdCancel } from "react-icons/md";
-import Image from "next/image";
 import { filterData, getFilterValues } from "../utils/filterData";
 
 const SearchFilter = () => {
-  const [filters, setFilters] = useState(filterData);
+  const [filters] = useState(filterData);
+
   const router = useRouter();
 
   const searchProperties = (filterValues) => {
@@ -20,6 +19,7 @@ const SearchFilter = () => {
     });
     router.push({ pathname: path, query });
   };
+
   return (
     <Flex justifyContent="center" flexWrap="wrap" p="4" bg="gray.100">
       {filters.map((filter) => (
