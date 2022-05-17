@@ -31,7 +31,7 @@ const Property = ({
       cursor="pointer"
     >
       <Box>
-        <img
+        <Image
           src={coverPhoto ? coverPhoto.url : DefaultImage}
           width={400}
           height={260}
